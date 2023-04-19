@@ -92,6 +92,7 @@ h4 {
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
 }
 
 .navigation {
@@ -117,12 +118,18 @@ h4 {
   grid-column: 1/6;
 }
 
-.welcome-img {
+.welcome-image {
   grid-column: 1/6;
 }
 
-.welcome-img img {
-  width: 200%;
+.welcome-image img {
+  width: 160%;
+  /* background: none; */
+  /*aspect-ratio: 1/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn; */
+  /* aspect-ratio: 2/3; */
+  /* text-indent: -100000px; */
 }
 
 .welcome-text a {
@@ -131,6 +138,19 @@ h4 {
 
 #portfolio {
   background: url(../images/square_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 30px 20px;
+}
+#portfolio h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+.projects a * {
+  margin: 0 20px;
+  max-width: 40%;
+  display: flex;
 }
 
 .projects img {
@@ -149,6 +169,31 @@ h4 {
   background: rgba(255, 211, 212, 00.2);
   padding: 20px;
   display: grid;
+  grid-column: 1/9;
+  margin: 20px 0;
+}
+#portfolio h4 {
+  color: #9994f7;
+}
+#Skills {
+  padding: 30px 20px;
+  background: #07083e;
+}
+#Skills h3{
+    text-align: center;
+}
+#Skills ul{
+    margin: 40px 0;
+}
+#Skills li{
+    padding: 10px;
+    background-color: rgba(0, 0, 0 ,0.2);
+    grid-column:span 4;
+    text-align: center;
+}
+#Skills img{
+    height: 80px;
+    margin: 10px auto;
 }
 
 .projects a:nth-child(1) {
