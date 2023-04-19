@@ -210,6 +210,31 @@ h4 {
   grid-column: 5/9;
   grid-row: 2;
 }
+#contact{
+    padding: 30px 20px;
+    background: #080936;
+}
+#contact h3, #contact p{
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+#contact input, #contact textarea{
+    width: 100% ;
+    margin: 10px 0;
+}
+#contact .button{
+    margin-top: 10px;
+}
+footer{
+    padding: 30px 20px;
+    background-color: #14153d;
+    background-image: url(../images/footer_image.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: top center;
+}
 
 /* Responsicve work */
 @media screen and (min-width: 620px) {
