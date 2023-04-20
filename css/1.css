@@ -213,6 +213,9 @@ h4 {
 #contact{
     padding: 30px 20px;
     background: #080936;
+    margin: 0 auto;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 #contact h3, #contact p{
     width: 80%;
@@ -221,8 +224,13 @@ h4 {
     text-align: center;
 }
 #contact input, #contact textarea{
-    width: 100% ;
-    margin: 10px 0;
+    width: 100% auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
 }
 #contact .button{
     margin-top: 10px;
@@ -235,7 +243,10 @@ footer{
     background-size: 40%;
     background-position: top center;
 }
-
+footer .copyright{
+    grid-column: 1/3;
+    font-size: 0.8em;
+}
 /* Responsicve work */
 @media screen and (min-width: 620px) {
 }
